@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AdressBook</string>
+    <string name="retry">Retry</string>
+    <string name="save_button">save</string>
+    <string name="name_edit">edit</string>
+    <string name="title_activity_edit">EditActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="edit_name">Name :</string>
+    <string name="edit_last_name">Last Name :</string>
+    <string name="edit_email">Email :</string>
+    <string name="edit_phone">Phone # :</string>
+    <string name="edit_location">Location :</string>
+    <string name="add_name">Name</string>
+    <string name="add_last_name">Last Name</string>
+    <string name="add_email">Email</string>
+    <string name="add_number">Number</string>
+    <string name="ladd_ocation">Location</string>
+    <string name="number">Phone #</string>
+</resources>

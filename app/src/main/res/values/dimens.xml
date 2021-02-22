@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="constraint_pg_height">341dp</dimen>
+    <dimen name="marginTop">5dp</dimen>
+    <dimen name="card_height">90dp</dimen>
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="text_error_5dp">5dp</dimen>
+    <!--
+    Because the window insets on round devices are larger than 15dp, this padding only applies
+    to square screens.
+    -->
+    <dimen name="box_inset_layout_padding">0dp</dimen>
+
+    <!--
+    This padding applies to both square and round screens. The total padding between the buttons
+    and the window insets is box_inset_layout_padding (above variable) on square screens and
+    inner_frame_layout_padding (below variable) on round screens.
+    -->
+    <dimen name="inner_frame_layout_padding">5dp</dimen>
+    <dimen name="margin_top_addAddress">28dp</dimen>
+    <dimen name="margin_top_add_lastName">28dp</dimen>
+    <dimen name="margin_top_email">28dp</dimen>
+    <dimen name="margin_top_add_phone">28dp</dimen>
+    <dimen name="margin_top_add_llocation">28dp</dimen>
+    <dimen name="margin_start_edit_name">50dp</dimen>
+    <dimen name="margin_top_edit_name">4dp</dimen>
+    <dimen name="margin_start_lastName">50dp</dimen>
+    <dimen name="margin_top_lastName">12dp</dimen>
+    <dimen name="margin_start_edit_email">50dp</dimen>
+    <dimen name="margin_top_emailaddress">20dp</dimen>
+    <dimen name="margin_start_edit_phone">60dp</dimen>
+    <dimen name="margin_top_edit_phone">8dp</dimen>
+    <dimen name="margin_start_edit_location">50dp</dimen>
+    <dimen name="margin_top_edit_location">16dp</dimen>
+    <dimen name="margin_top_button_edit">52dp</dimen>
+    <dimen name="margin_start_name_view">8dp</dimen>
+    <dimen name="margin_top_name_view">24dp</dimen>
+    <dimen name="margin_start_last_name">8dp</dimen>
+    <dimen name="margin_top_lastName_view">40dp</dimen>
+    <dimen name="margin_start_email_view">8dp</dimen>
+    <dimen name="margin_top_email_view">40dp</dimen>
+    <dimen name="margin_start_phone_view">8dp</dimen>
+    <dimen name="margin_top_phone_view">40dp</dimen>
+    <dimen name="margin_start_view">8dp</dimen>
+    <dimen name="margin_top_view">40dp</dimen>
+    <dimen name="margin_top_search_view">4dp</dimen>
+    <dimen name="margin_end_search_view">60dp</dimen>
+    <dimen name="margin_start_no_contact_image">30dp</dimen>
+    <dimen name="margin_end_no_contact_image">62dp</dimen>
+    <dimen name="width_progressbar">51dp</dimen>
+    <dimen name="height_progressBar">59dp</dimen>
+</resources>
