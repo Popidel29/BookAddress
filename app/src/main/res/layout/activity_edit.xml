@@ -13,7 +13,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toEndOf="@+id/edit_name_view"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:maxLength="15"/>
 
     <EditText
         android:id="@+id/editAddressLastName"
@@ -24,7 +25,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toEndOf="@+id/edit_last_name_view"
-        app:layout_constraintTop_toBottomOf="@+id/editAddressName" />
+        app:layout_constraintTop_toBottomOf="@+id/editAddressName"
+        android:maxLength="15"/>
 
     <EditText
         android:id="@+id/editEmailAddress"
@@ -35,7 +37,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toEndOf="@+id/edit_email_view"
-        app:layout_constraintTop_toBottomOf="@+id/editAddressLastName" />
+        app:layout_constraintTop_toBottomOf="@+id/editAddressLastName"
+        android:maxLength="25"/>
 
     <EditText
         android:id="@+id/editPhoneNumber"
@@ -43,6 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_start_edit_phone"
         android:layout_marginTop="@dimen/margin_top_edit_phone"
+        android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.087"
         app:layout_constraintStart_toEndOf="@+id/edit_phone_view"
@@ -57,7 +61,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toEndOf="@+id/edit_location_view"
-        app:layout_constraintTop_toBottomOf="@+id/editPhoneNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/editPhoneNumber"
+        android:maxLength="50"/>
 
     <Button
         android:id="@+id/btnEdit"

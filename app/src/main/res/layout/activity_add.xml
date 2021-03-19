@@ -13,7 +13,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:maxLength="15"/>
 
     <EditText
         android:id="@+id/addAddressLastName"
@@ -24,7 +25,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addAddressName" />
+        app:layout_constraintTop_toBottomOf="@+id/addAddressName"
+        android:maxLength="15"/>
 
     <EditText
         android:id="@+id/addEmailAddress"
@@ -35,7 +37,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addAddressLastName" />
+        app:layout_constraintTop_toBottomOf="@+id/addAddressLastName"
+        android:maxLength="25"/>
 
     <EditText
         android:id="@+id/addPhoneNumber"
@@ -43,6 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_top_add_phone"
         android:hint="@string/number"
+        android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +61,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addPhoneNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/addPhoneNumber"
+        android:maxLength="50"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnAdd"

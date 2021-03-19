@@ -15,6 +15,7 @@
             android:id="@+id/searchView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             android:layout_marginTop="@dimen/margin_top_search_view"
             android:layout_marginEnd="@dimen/margin_end_search_view"
             app:layout_constraintEnd_toEndOf="parent"
@@ -24,8 +25,6 @@
             android:id="@+id/noContactsImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
             android:layout_marginStart="@dimen/margin_start_no_contact_image"
             android:layout_marginEnd="@dimen/margin_end_no_contact_image"
             android:src="@drawable/list_empty"
@@ -33,7 +32,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:visibility="visible"/>
+            android:visibility="visible"
+           />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_notes"

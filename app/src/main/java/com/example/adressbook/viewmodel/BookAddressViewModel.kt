@@ -7,6 +7,7 @@ import com.example.adressbook.model.repository.BookAddressRepository
 import io.reactivex.disposables.CompositeDisposable
 
 class BookAddressViewModel(private val bookAddressRepository: BookAddressRepository) : ViewModel() {
+
     val bookAddressListSuccess = MutableLiveData<List<BookAddressEntity>>()
     val addBookAddressSuccessObservable = MutableLiveData<Boolean>()
     val editBookAddressSuccess = MutableLiveData<BookAddressEntity>()
@@ -54,5 +55,10 @@ class BookAddressViewModel(private val bookAddressRepository: BookAddressReposit
             bookAddressRepository.searchBookAddress(search).subscribe({ searchBook ->
                 bookAddressListSuccess.value = searchBook }, { error -> bookAddressListError.value = error.message })
         )
+    }
+    //Assure memory management to avoid leaks
+    override fun onCleared() {
+        compositeDisposable.clear()
+        super.onCleared()
     }
 }

@@ -50,6 +50,7 @@ class AddBookActivity : AppCompatActivity() {
                             .show()
                         val intent = Intent(this@AddBookActivity, MainActivity::class.java)
                         startActivity(intent)
+                        finish()
                     } else {
                         Toast.makeText(
                             this@AddBookActivity,

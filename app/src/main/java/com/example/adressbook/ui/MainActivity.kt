@@ -12,14 +12,14 @@ import com.example.adressbook.R
 import com.example.adressbook.model.repository.BookAddressRepositoryImpl
 import com.example.adressbook.viewmodel.BookAddressViewModel
 import com.example.adressbook.viewmodel.BookAddressViewModelFactory
-import kotlinx.android.synthetic.main.activity_book_address.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 const val ITEM_KEY = "item_key"
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_book_address)
+        setContentView(R.layout.activity_main)
 
         val bookAddressListViewModel = ViewModelProvider(
             this,
@@ -33,6 +33,7 @@ class MainActivity : AppCompatActivity() {
             if(bookList.isNotEmpty())
             {
                 noContactsImage.visibility = View.GONE
+                searchView.visibility = View.VISIBLE
             }
 
             progressBar.visibility = View.GONE
@@ -42,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         })
 
 
-        bookAddressListViewModel.bookAddressListError.observe(this, Observer { bookList ->
+        bookAddressListViewModel.bookAddressListError.observe(this, Observer {
             progressBar.visibility = View.GONE
             linearError.visibility = View.VISIBLE
         })
@@ -65,7 +66,7 @@ class MainActivity : AppCompatActivity() {
                     Observer { searchList ->
                         progressBar.visibility = View.GONE
                         rv_notes.adapter =
-                            BookListAdapter(searchList, { id: Int -> itemClicked(id) })
+                            BookListAdapter(searchList) { id: Int -> itemClicked(id) }
                         rv_notes.layoutManager = LinearLayoutManager(parent)
                     })
 

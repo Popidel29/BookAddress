@@ -40,7 +40,7 @@ class EditActivity : AppCompatActivity() {
             editAddressLocation.setText(bookAddress.address)
         })
 
-        editBookViewModel.bookAddressListError.observe(this, Observer { error ->
+        editBookViewModel.bookAddressListError.observe(this, Observer {
             Toast.makeText(this@EditActivity, "Error updating, try again", Toast.LENGTH_SHORT)
                 .show()
         })
